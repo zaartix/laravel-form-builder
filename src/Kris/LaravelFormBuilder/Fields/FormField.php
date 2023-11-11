@@ -644,6 +644,7 @@ abstract class FormField
         if ($this->parent->getRequest()->hasSession()) {
             $errors = $this->parent->getRequest()->session()->get('errors');
         }
+        $errors = $this->parent->getRequest()->attributes->get('errors', $errors);
         $errorBag = $this->parent->getErrorBag();
 
         if ($errors && $errors->hasBag($errorBag) && $errors->getBag($errorBag)->has($this->getNameKey())) {
