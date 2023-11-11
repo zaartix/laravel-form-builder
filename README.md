@@ -33,7 +33,7 @@ Changelog can be found [here](https://github.com/kristijanhusak/laravel-form-bui
 ### Using Composer
 
 ```sh
-composer require kris/laravel-form-builder
+composer require zaartix/laravel-form-builder
 ```
 
 Or manually by modifying `composer.json` file:
@@ -41,7 +41,7 @@ Or manually by modifying `composer.json` file:
 ``` json
 {
     "require": {
-        "kris/laravel-form-builder": "1.*"
+        "zaartix/laravel-form-builder": "1.*"
     }
 }
 ```
